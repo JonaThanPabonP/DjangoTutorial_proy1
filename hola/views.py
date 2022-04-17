@@ -7,3 +7,6 @@ def hola(request):
 
 def chao(request, nombre):
     return HttpResponse(f"Chao {nombre}")
+
+def saludoHTML(request):
+    return render(request, 'hola/index.html')
